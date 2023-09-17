@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>make</title>
+
+    </head>
+    <body>
+
+        <%= htmlWebpackPlugin.options.header %>
+
+        <%= htmlWebpackPlugin.options.menu %>
+
+        <div class='App' id='App'>
+            <%= htmlWebpackPlugin.options.sideMenu %>
+            
+            <div class='wrapper'>
+                <section class='harangue section' id='harangue'>
+                    <%= htmlWebpackPlugin.options.harangue %>
+                </section>
+                <section class='grid section' id='grid'>
+                    <div class='wrapper__title'>
+                        Сетка
+                    </div>
+                    <div class='wrapper__descr'>
+                        Задание предполагает адаптивную вёрстку. Используется 3 состояния в зависимости
+                        от устройства. Сетка «резиновая» — переменной ширины.
+                    </div>
+                    <div class='layout'>
+                        <%= htmlWebpackPlugin.options.desktop %>
+                        <%= htmlWebpackPlugin.options.tab %>
+                        <%= htmlWebpackPlugin.options.phone %>
+                     </div>
+                </section>
+                <section class='typography section' id='typography'>
+                    <div class='wrapper__title'>
+                        Типографика
+                    </div>
+                    <div class='wrapper__descr'>
+                        Используется шрифт Graphik. На телефонах стили типографики переопределяются
+                    </div>
+                    <div class='typography__menu'>
+                        <ul class='typography__menu__ul'>
+                            <li class='typography__menu__item typography__menu__item__active'>
+                                Десктоп
+                            </li>
+                            <li class='typography__menu__item'>
+                                Телефон
+                            </li>
+                        </ul>      
+                    </div>
+                    <%= htmlWebpackPlugin.options.typographyDescrDesktop %>
+                    <%= htmlWebpackPlugin.options.typographyDescrPhone %>
+                </section>
+                <section class='ui section' id='ui'>
+                    <div class='wrapper__title'>
+                        ui
+                    </div>
+                
+                    <div class='ui__title ui__title__field'>
+                        Текстовое поле
+                    </div>
+                        <%= htmlWebpackPlugin.options.textField %>
+                
+                    <div class='ui__title ui__title__list'>
+                        Выпадающий список
+                    </div>
+                    <div class='wrapper__descr'>
+                        Компонент состоит из текстового поля и выпадающей подсказки
+                    </div>
+                        <%= htmlWebpackPlugin.options.select %>
+                
+                    <div class='ui__title ui__title__btn'>
+                        Кнопка
+                    </div>
+                        <%= htmlWebpackPlugin.options.buttonUi %>
+
+                    <div class='ui__title'>
+                        Чекбокс, радиобаттон
+                    </div>
+                    
+                    <div class='ui__buttonWrap'>
+                        <div class='ui__buttonWrap__wrap' >
+                            <%= htmlWebpackPlugin.options.checkbox %>
+                        </div>
+                        <div class='ui__buttonWrap__wrap' >
+                            <%= htmlWebpackPlugin.options.radio %>
+                        </div>   
+                    </div>
+                    <div class='ui__title'>
+                        Аккордеон
+                    </div>
+                    <div class='accordion'>
+                        <%= htmlWebpackPlugin.options.accordion %>                   
+                    </div>
+                </section>
+            </div>
+        </div>
+    </body>
+</html>
