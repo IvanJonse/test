@@ -10,26 +10,27 @@
   right: 0
   height: 100vh
   z-index: 100
-  padding: 8px
-  transform: translateX(100%)
   box-sizing: border-box
-  animation: slide .4s
+  animation: slide .4s ease
+  position: relative
   &__close
+    position: absolute
+    top: 28.03px
+    right: 63.03px
     z-index: 9999
     cursor: pointer
     margin-left: auto
-    width: 27px
-    height: 27px
+    width: 24px
+    height: 24px
     padding: 0
     padding: 1px
     justify-content: center
     align-items: center
-    position: relative
     &:before,
     &:after
         position: absolute
         content: ''
-        height: 35px
+        height: 24px
         width: 3px
         border-radius: 3px
         transform: translate(-50%, -50%)
@@ -164,8 +165,8 @@
             margin-left: 26px
 
     .App__isOpen__close
-        margin-top: 24px
-        margin-right: 26px
+        // margin-top: 24px
+        // margin-right: 26px
         &:before,
         &:after
             background: #272727
