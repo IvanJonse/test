@@ -29,10 +29,10 @@ body
   display: grid
   grid-template-columns: repeat(12, 72px)
   grid-column-gap: 32px
-  padding-left: 64px
   overflow-y: scroll
   height: 90vh
   margin-top: 72px !important
+
 
 .wrapper
   display: grid
@@ -40,10 +40,8 @@ body
   z-index: 4
   color: #1B1B1B
   text-align: left
-  grid-column: 4 / span 9
-  padding-right: 64px
- 
- 
+  grid-column: 5 / span 9 
+  margin-left: -40px
   &__title
     font-family: 'Graphik-Black', sans-serif
     font-size: 48px
@@ -69,8 +67,8 @@ body
 .harangue .wrapper__title   
   grid-column: 1 / span 5
 
-.harangue .wrapper__subtitle   
-  margin-top: 64px
+.harangue .wrapper__subtitle 
+  padding-top: 10px  
   grid-column: 1 / span 2
 
 .harangue .wrapper__descr   
@@ -84,12 +82,13 @@ body
 .grid .wrapper__title
   grid-column: 1 / span 2
   font-size: 32px
+  margin-top: 28px
 
 .grid .wrapper__descr
-  margin-top: 24px
+  margin-top: 30px
 
 .layout
-  margin-top: 48px
+  margin-top: 11px
   display: grid
   grid-column: 1 / span 9
   &__title
@@ -112,6 +111,7 @@ body
       font-family: 'Graphik-Regular', sans-serif
       font-weight: 400
       margin-right: 95px
+      line-height: 23px
       white-space: nowrap
       &:nth-child(2)
         margin-right: 152px
@@ -119,12 +119,11 @@ body
         margin-right: 0
       &__count
         text-align: left
-        margin-top: 8px
         white-space: nowrap
         font-family: 'Graphik-Regular', sans-serif
         font-size: 24px
         font-weight: 500
-        line-height: 32px
+        line-height: 42px
         color: #1B1B1B
   &__image
     margin-top: 48px
@@ -146,7 +145,7 @@ body
   margin-top: 80px
 
 .typography .wrapper__descr
-  margin-top: 24px
+  margin-top: 29px
 
 .ui .wrapper__title
   grid-column: 1/span 2
@@ -161,7 +160,7 @@ body
 .ui
   grid-template-columns: repeat(9, 1fr) 
   display: grid
-  margin-top: 80px
+  margin-top: 37px
   &__title
     font-family: 'Graphik-Regular', sans-serif
     font-size: 24px
